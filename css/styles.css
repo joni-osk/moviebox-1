@@ -53,6 +53,49 @@ body {
 	padding: 35px 0 0 0;
 }
  
+.container {
+	padding: 0 18px 0 18px;
+}
+
+
+
+h2.popularHeadline  {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	padding: 64px 0  50px 122px;	
+}       
+
+
+
+
+.card {
+	position: absolute; 
+	background-color: #999; /*muna að breyta lit*/
+	width: 345px;
+	height: 406px;
+	border-style: solid;
+    border-width: 3px;
+    border-color: #000; /*muna að breyta lit, round corners og skugga*/
+}
+
+
+.card .cardTitle span {
+	font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+
+}
+
+
+.card .undertitle span {
+	
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	color: #737373;
+
+
+}
+
+
 
 @media all and (max-width: 600px) {
 	
@@ -82,6 +125,43 @@ body {
 		padding: 35px 0 0 0;
 	}
 	
+	h2.popularHeadline  {
+	font-size: 20px;
+	padding: 64px 0  50px 21px;
+
+}
+
+
+
+
+	.card {
 	
+	background-color: #999;
+	width: 333px;
+	height: 214px;
+}
 	
+.card .cardTitle span {
+	float: right;
+	padding: 75px 22px 35px 0px;
+}
+
+
+.card .undertitle span {
+	float: right;
+	margin-top: 184px;
+	margin-left: 132px;
+
+
+
+
+}
+
+
+}
+
+
+
+
+
 }
