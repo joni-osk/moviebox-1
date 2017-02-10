@@ -62,11 +62,9 @@ body {
 h2.popularHeadline  {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
-	padding: 64px 0  50px 122px;	
+	padding: 64px 0px  50px 122px;	
+	color: #4F4F4F;
 }       
-
-
-
 
 .card {
 	position: absolute; 
@@ -74,25 +72,22 @@ h2.popularHeadline  {
 	width: 345px;
 	height: 406px;
 	border-style: solid;
+	border-radius: 5px;
     border-width: 3px;
-    border-color: #000; /*muna að breyta lit, round corners og skugga*/
+    border-color: #fff; /*muna  round corners */
+    box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.1);
 }
-
 
 .card .cardTitle span {
 	font-family: 'Oswald', sans-serif;
 	font-size: 30px;
-
+	color: #4F4F4F;
 }
 
-
 .card .undertitle span {
-	
 	font-family: 'Oswald', sans-serif;
 	font-size: 14px;
 	color: #737373;
-
-
 }
 
 
@@ -127,38 +122,30 @@ h2.popularHeadline  {
 	
 	h2.popularHeadline  {
 	font-size: 20px;
-	padding: 64px 0  50px 21px;
-
-}
-
-
-
+	padding: 31px 0  11px 21px;
+	}
 
 	.card {
-	
 	background-color: #999;
 	width: 333px;
 	height: 214px;
-}
+	}
 	
-.card .cardTitle span {
-	float: right;
-	padding: 75px 22px 35px 0px;
-}
+	.card .cardTitle span {
+		float: right;
+		padding: 75px 22px 35px 0px;
+	}
 
 
-.card .undertitle span {
-	float: right;
-	margin-top: 184px;
-	margin-left: 132px;
+	.card .undertitle span {
+		float: right;
+		padding-top: 170px;
+		margin-right: -90px;
+
+	}
 
 
 
-
-}
-
-
-}
 
 
 

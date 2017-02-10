@@ -1,0 +1,47 @@
+#video-banner .skew {
+/*  z-index: 1;*/
+  position: relative;
+}
+
+#video-banner .skew:before {
+ 
+	content: '';
+  position: absolute;
+  width: 100%;
+	top: 30px;
+	left: 0;
+  bottom: 0;
+	overflow: visible;
+  height: 320px;
+  background: #0189b8;
+  -webkit-transform: skewY(-4deg); 
+  -moz-transform: skewY(-4deg);
+  -ms-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
+  transform: skewY(-4deg);
+  -webkit-backface-visibility: hidden;
+	backface-visibility: initial;
+	z-index: -2;
+	
+}
+
+
+/*
+	content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: visible;
+  width: 100%;
+  height: 850px;
+  background: #00bcd4;
+  z-index: -1;
+  -webkit-transform: skewY(-2deg);
+  -moz-transform: skewY(-2deg);
+  -ms-transform: skewY(-2deg);
+  -o-transform: skewY(-2deg);
+  transform: skewY(-2deg);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: initial;*/
+
+
