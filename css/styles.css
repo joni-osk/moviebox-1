@@ -20,6 +20,12 @@ body {
 	background-color: #fafafa; 
 }
 
+.container {
+	padding: 0 18px 0 18px;
+}
+
+
+/*head*/
 .banner{
 	background: linear-gradient(#FAA20E, #E7833B);
 	height: 440px;
@@ -53,171 +59,182 @@ body {
 	padding: 35px 0 0 0;
 }
  
-.container {
-	padding: 0 18px 0 18px;
-}
-
-
-
-h2.popularHeadline  {
+/*Catagories*/
+.popularHeadline  {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	padding: 64px 0px  50px 122px;	
 	color: #4F4F4F;
-}       
+}    
 
-.card {
-	position: absolute; 
-	background-color: #999; /*muna að breyta lit*/
-	width: 345px;
-	height: 406px;
-	border-style: solid;
-	border-radius: 5px;
-    border-width: 3px;
-    border-color: #fff; /*muna  round corners */
-    box-shadow: 0px 2px 4px 4px rgba(0, 0, 0, 0.1);
+/*Cards*/
+.hk-card {
+    height: 214px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    box-shadow: 0 2px 8px rgba(0,0,0, .3);
+    overflow: hidden;
+    position: relative;
 }
 
-.card .cardTitle span {
-	font-family: 'Oswald', sans-serif;
+.hk-card img {
+    width: 100%;
+    position: absolute;
+}
+
+.hk-cardTitle span {
+    padding-top: 28px;
+    padding-bottom: 18px;
+    z-index: 5;
+    font-family: 'Oswald', sans-serif;
 	font-size: 30px;
 	color: #4F4F4F;
+	position: relative;
 }
 
-.card .undertitle span {
-	font-family: 'Oswald', sans-serif;
+.hk-card .hk-undertitle span {
+    padding-top: 28px;
+    padding-bottom: 18px;
+    z-index: 5;
+    font-family: 'Oswald', sans-serif;
+	font-size: 30px;
+	color: #4F4F4F;
+	font-family: 'Roboto Condensed', sans-serif;
 	font-size: 14px;
 	color: #737373;
+	position: relative;
 }
+
+.hk-card:after {
+   	height: 100%;
+    /*width: 100px;*/
+    /*background-color: rgba(255,255,255,.7);*/
+    content: "";
+    position: absolute;
+   	top: 0;
+    right: 0;
+    border-bottom: 214px solid rgba(255,255,255,.8);
+    border-left: 90px solid transparent;
+    border-right: 100% solid transparent;
+    width: 68%; 
+}
+
+
 
 
 
 @media all and (max-width: 600px) {
 	
-	.banner{
-		background: linear-gradient(#FAA20E, #E7833B);
-		height: 200px;
-		width: 100%;
-	}
+/*head*/
+.banner {
+	background: linear-gradient(#FAA20E, #E7833B);
+	height: 200px;
+	width: 100%;
+}
 	
-	.banner-h1 {
-		font-size: 35px;
-		font-weight: 300;
-	}
+.banner-h1 {
+	font-size: 35px;
+	font-weight: 300;
+}
 	
-	.banner-h2 {
-		display: none;
-	}
+.banner-h2 {
+	display: none;
+}
 	
-	.logo {
-		padding: 20px 0 0 0px; 	
-		width: 80px;
-		}
+.logo {
+	padding: 20px 0 0 0px; 	
+	width: 80px;
+}
 
-	.logo-leit {
-		float: right;
-		width: 30px;
-		padding: 35px 0 0 0;
-	}
+.logo-leit {
+	float: right;
+	width: 30px;
+	padding: 35px 0 0 0;
+}
 	
-	h2.popularHeadline  {
+/*Catagories*/
+.popularHeadline  {
 	font-size: 20px;
 	padding: 31px 0  11px 21px;
-	}
+}
 
-	.card {
+/*Cards*/
+.hk-card {
 	background-color: #999;
 	width: 333px;
 	height: 214px;
-	}
+}
 	
-	.card .cardTitle span {
-		float: right;
-		padding: 75px 22px 35px 0px;
-	}
-
-
-	.card .undertitle span {
-		float: right;
-		padding-top: 170px;
-		margin-right: -90px;
-
-	}
-
----------
-
-.lib-panel {
-    margin-bottom: 20Px;
-
-
-
-}
-.lib-panel img {
-
-
-
+.hk-card .hk-cardTitle span {
+	float: right;
+	padding: 75px 22px 35px 0px;
+	z-index: 5;
 }
 
-.lib-panel .row,
-.lib-panel .col-md-3 {
-    padding: 0;
-    background-color: #FFFFFF;
+.hk-card .hk-undertitle span {
+	float: right;
+	padding-top: 175px;
+	margin-right: -90px;
+	z-index: 5;
+}
 
+.hk-ratingCircle {
+	position: absolute;
+	right: 12px;
+	bottom: 12px;
+	z-index: 3;
+	width: 32px;
+	height: 32px;
+	background: #E7833B;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+}
 
-
+.hk-ratingCircle span {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	color: #fff;
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
 }
 
 
-.lib-panel .lib-row {
-    padding: 0 20px 0 20px;
 
 
-}
-
-.lib-panel .lib-row.lib-header {
-    background-color: #FFFFFF;
-    font-size: 20px;
-    padding: 10px 20px 0 20px;
 
 
-}
-
-.lib-panel .lib-row.lib-header .lib-header-seperator {
-    height: 2px;
-    width: 26px;
-    background-color: #d9d9d9;
-    margin: 7px 0 7px 0;
 
 
-}
 
-.lib-panel .lib-row.lib-desc {
-    position: relative;
-    height: 100%;
-    display: block;
-    font-size: 13px;
 
-}
-.lib-panel .lib-row.lib-desc a{
-    position: absolute;
-    width: 100%;
-    bottom: 10px;
-    left: 20px;
-}
 
-.row-margin-bottom {
-    margin-bottom: 20px;
-}
 
-.box-shadow {
 
-    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-    box-shadow: 0 0 10px 0 rgba(0,0,0,.10);
-}
 
-.no-padding {
-    padding: 0;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
