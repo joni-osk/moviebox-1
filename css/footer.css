@@ -1,0 +1,26 @@
+
+
+ .hk-bannerfooter {
+	background: linear-gradient(#FAA20E, #E7833B);
+	height: 305px;
+	width: 100%;
+}
+
+
+
+
+
+.logo {
+	padding: 20px 0 0 10px;
+	width: 130px;
+}
+
+
+
+
+@media all and (max-width: 600px) {
+
+	.hk-bannerfooter {
+		display: none;
+	}
+}
