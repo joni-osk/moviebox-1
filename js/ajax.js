@@ -8,9 +8,9 @@ r.onreadystatechange = function () {
 	const image = document.createElement("img");
 	const title = document.createElement("h1");
 	//image.src = "http://image.tmdb.org/t/p/original" + response.backdrop_path;
-	title.innerHTML = response.original_title;
+	//title.innerHTML = response.original_title;
 	//container.append(image);
-	container.append(title);
-	document.body.append(container);
+	//container.append(title);
+	//document.body.append(container);
 };
 r.send("banana=yellow");
