@@ -65,7 +65,15 @@ body {
 	font-size: 40px;
 	padding: 64px 0px  50px 122px;	
 	color: #4F4F4F;
+}  
+
+.comedyHeadline  {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	padding: 64px 0px  50px 122px;	
+	color: #4F4F4F;
 }    
+
 
 /*Cards*/
 .hk-card {
@@ -99,6 +107,7 @@ body {
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	position: relative; /*má ekki breyta þessu*/
 }
+
 
 .hk-undertitle span {
     padding-top: 28px;
@@ -162,13 +171,44 @@ body {
 	bottom: 6px;
 }
 
+/*footer*/
+ .hk-bannerfooter {
+	background: linear-gradient(#FAA20E, #E7833B);
+	height: 305px;
+	width: 100%;
+}
+
+.footerlogo img {
+
+}
+
+
+.copyright span {
+	font-family: 'Oswald', sans-serif;
+	font-size: 16px;
+	color: #fff;
+	font-weight: lighter;
+	right: 49px;
+	top: 100px;
+	position: absolute;
+}
+
+
+
+
+
+
 
 
 
 
 @media all and (max-width: 600px) {
 
-	
+/*footer*/	
+.hk-bannerfooter {
+	display: none;
+}
+
 /*head*/
 .banner {
 	background: linear-gradient(#FAA20E, #E7833B);
