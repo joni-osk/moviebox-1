@@ -11,6 +11,6 @@ r.onreadystatechange = function () {
 	//title.innerHTML = response.original_title;
 	//container.append(image);
 	//container.append(title);
-	document.body.append(container);
+	//document.body.append(container);
 };
 r.send("banana=yellow");
