@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	$('.superslider').slick({
-  dots: true,
+  dots: false,
   infinite: true,
   speed: 400,
   slidesToShow: 4.03,
@@ -12,7 +12,7 @@ $(document).ready(function(){
         slidesToShow: 3.03,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
@@ -21,7 +21,7 @@ $(document).ready(function(){
         slidesToShow: 2.03,
         slidesToScroll: 2,
         infinite: true,
-        dots: true
+        dots: false
       }
     },
     {
