@@ -1,5 +1,29 @@
+<<<<<<< HEAD
 #steps-fivepercent-slider .ui-slider-tip {
     visibility: visible;
     opacity: 1;
     top: -30px;
 }
+=======
+.rating-slider.ui-slider{
+	
+}
+.ui-slider-pips {}
+.ui-slider-float {}
+    .ui-slider-handle {}
+        .ui-slider-tip {}
+    .ui-slider-pip {}
+    .ui-slider-pip-nth {}
+        .ui-slider-line {}
+        .ui-slider-label {}
+        .ui-slider-tip-label {}
+    .ui-slider-pip-hide {}
+    .ui-slider-pip-last {}
+    .ui-slider-pip-first {}
+    .ui-slider-pip-label {}
+    .ui-slider-pip-inrange {}
+    .ui-slider-pip-initial {}
+    .ui-slider-pip-selected {}
+    .ui-slider-pip-initial-nth {}
+    .ui-slider-pip-selected-nth {}
+>>>>>>> ad8973262ef5f9ca9b163b0c48100663f326ac2d
