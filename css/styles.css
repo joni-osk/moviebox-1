@@ -96,7 +96,7 @@ body {
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0,0,0, .3);
     overflow: hidden;
-    position: relative;  /*má ekki breyta þessu*/
+    position: relative;  
 }
 
 .hk-card img {
@@ -106,13 +106,13 @@ body {
 
 .hk-cardTitleDesktop span {
 	z-index: 5;
-	top: 240px;
+	top: 280px;
 	left: 21px;
 	color: #4F4F4F;
 	font-size: 30px;
 	font-family: 'Oswald', sans-serif;
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-	position: relative; /*má ekki breyta þessu*/
+	position: absolute; 
 }
 
 .hk-undertitle span {
@@ -126,8 +126,8 @@ body {
 	font-size: 14px;
 	color: #737373;
 	left: 21px;
-	top:285px;
-	position: relative; /*má ekki breyta þessu*/
+	top: 340px;
+	position: absolute; 
 }
 
 .hk-card:after {
@@ -251,6 +251,7 @@ body {
 
 
 
+
 @media all and (max-width: 600px) {
 
 
@@ -321,7 +322,7 @@ body {
 
 .hk-cardTitle span {
 	float: right;
-	padding: 70px 22px 35px 0px;
+	padding: 70px 25px 35px 0px;
 	z-index: 5;
 	top:0;
 	left:0;
@@ -369,7 +370,7 @@ body {
 
 .hk-ratingCircle {
 	position: absolute;
-	right: 12px;
+	right: 21px;
 	bottom: 12px;
 	z-index: 3;
 	width: 32px;

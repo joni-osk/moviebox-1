@@ -3,13 +3,13 @@ $(document).ready(function(){
   dots: true,
   infinite: true,
   speed: 400,
-  slidesToShow: 4,
+  slidesToShow: 4.03,
   slidesToScroll: 4,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 3.03,
         slidesToScroll: 3,
         infinite: true,
         dots: true
@@ -18,7 +18,7 @@ $(document).ready(function(){
     {
       breakpoint: 600,
       settings: {
-        slidesToShow: 2,
+        slidesToShow: 2.03,
         slidesToScroll: 2,
         infinite: true,
         dots: true
@@ -27,9 +27,9 @@ $(document).ready(function(){
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 1.03,
         slidesToScroll: 1,
-  
+		dots: false
       }
     }
     // You can unslick at a given breakpoint now by adding:
