@@ -104,12 +104,6 @@ body {
     position: absolute;
 }
 
-.hk-card img {
-    width: 100%;
-    position: absolute;
-}
-
-
 .hk-cardTitleDesktop span {
 	z-index: 5;
 	top: 240px;
@@ -120,7 +114,6 @@ body {
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	position: relative; /*má ekki breyta þessu*/
 }
-
 
 .hk-undertitle span {
     padding-top: 28px;
@@ -190,7 +183,6 @@ body {
 	height: 305px;
 	width: 100%;
 	margin-top: 60px;
-
 }
 
 .footerlogo {
@@ -202,6 +194,7 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
+
 }
 
 .centerlinks ul li a {
@@ -213,6 +206,7 @@ body {
 	padding: 25px;
 	top: 80px;
 	position: relative;
+
 }
 
 .copyright span {
@@ -224,6 +218,29 @@ body {
 	top: 70px;
 	position: absolute;
 }
+
+
+/*VideoSlider*/
+
+
+
+.slick-dots li button {
+	transform: scale(3.3); /*stækka bubblurnar*/
+}
+
+.slick-next {
+	right: 5px;
+
+}
+
+.slick-prev {
+	left: 5px;
+
+}
+
+
+
+
 
 
 
