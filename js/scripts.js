@@ -36,9 +36,18 @@ $(document).ready(function(){
     // settings: "unslick"
     // instead of a settings object
   ]
-});
+
+}); // lokar .superslider
+
+
+// Ef annar slider þá kemur hann hér:
+
+
 
 
 });
+
+
+
 
 

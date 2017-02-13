@@ -180,9 +180,10 @@ Dökk brúnn: #220D0B
 		line-height: 2rem;
 	}
 	
-	.ir-stills-slider {
-		
+
+
+/*VideoSlider*/
+	.superslider {
+		padding-bottom: 50px;
 	}
-	
-	
 }

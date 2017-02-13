@@ -31,7 +31,6 @@ body {
 	height: 440px;
 	width: 100%;
 }
-
 .banner-h1{
 	text-align: center;
 	font-size: 72px;
@@ -39,7 +38,6 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 }
-
 .banner-h2{
 	text-align: center;
 	font-size: 43px;
@@ -47,12 +45,10 @@ body {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 200;
 }
-
 .logo {
 	padding: 20px 0 0 10px;
 	width: 130px;
 }
-
 .logo-leit {
 	float: right;
 	width: 51px;
@@ -66,21 +62,18 @@ body {
 	padding: 64px 0px  50px 122px;	
 	color: #4F4F4F;
 }  
-
 .comedyHeadline  {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	padding: 64px 0px  50px 122px;	
 	color: #4F4F4F;
 }    
-
 .romanceHeadline  {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	padding: 64px 0px  50px 122px;	
 	color: #4F4F4F;
 } 
-
 .actionHeadline  {
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
@@ -98,12 +91,10 @@ body {
     overflow: hidden;
     position: relative;  
 }
-
 .hk-card img {
     width: 100%;
     position: absolute;
 }
-
 .hk-cardTitleDesktop span {
 	z-index: 5;
 	top: 280px;
@@ -114,7 +105,6 @@ body {
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	position: absolute; 
 }
-
 .hk-undertitle span {
     padding-top: 28px;
     padding-bottom: 18px;
@@ -129,7 +119,6 @@ body {
 	top: 340px;
 	position: absolute; 
 }
-
 .hk-card:after {
    	height: 117%;
     /*width: 100px;*/
@@ -143,7 +132,6 @@ body {
     border-right: 100% solid transparent;
     width: 100%; 
 }
-
 .hk-acters span {
 	color: #3D6390;
 	font-family: 'Roboto Condensed', sans-serif;
@@ -153,7 +141,6 @@ body {
 	bottom: 52px;
 	z-index: 5;
 }
-
 .hk-ratingCircle {
 	position: absolute;
 	right: 12px;
@@ -167,7 +154,6 @@ body {
 	border-radius: 50px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
 }
-
 .hk-ratingCircle span {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
@@ -184,7 +170,6 @@ body {
 	width: 100%;
 	margin-top: 60px;
 }
-
 .footerlogo {
 	display: inline-block;
 	position: relative;
@@ -194,9 +179,7 @@ body {
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
-
 }
-
 .centerlinks ul li a {
 	color: #fff;
 	font-size: 20px;
@@ -206,9 +189,7 @@ body {
 	padding: 25px;
 	top: 80px;
 	position: relative;
-
 }
-
 .copyright span {
 	font-family: 'Oswald', sans-serif;
 	font-size: 16px;
@@ -219,34 +200,19 @@ body {
 	position: absolute;
 }
 
-
 /*VideoSlider*/
-
 .superslider {
 	padding-left: 122px;
 }
-
 .slick-dots li button {
 	transform: scale(5.5); /*stækka bubblurnar*/
 }
-
 .slick-next {
 	right: 5px;
-
 }
-
 .slick-prev {
 	left: 5px;
-
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -254,29 +220,23 @@ body {
 
 @media all and (max-width: 600px) {
 
-
-
 /*head*/
 .banner {
 	background: linear-gradient(#FAA20E, #E7833B);
 	height: 200px;
 	width: 100%;
 }
-	
 .banner-h1 {
 	font-size: 35px;
 	font-weight: 300;
 }
-	
 .banner-h2 {
 	display: none;
 }
-	
 .logo {
 	padding: 20px 0 0 0px; 	
 	width: 80px;
 }
-
 .logo-leit {
 	float: right;
 	width: 30px;
@@ -288,29 +248,24 @@ body {
 	font-size: 20px;
 	padding: 31px 0  11px 21px;
 }
-
 .comedyHeadline {
 	font-size: 20px;
 	padding: 31px 0  11px 21px;
 	font-family: 'Oswald', sans-serif;
 	color: #4F4F4F;
 }
-
 .romanceHeadline {
 	font-size: 20px;
 	padding: 31px 0  11px 21px;
 	font-family: 'Oswald', sans-serif;
 	color: #4F4F4F;
 }
-
 .actionHeadline {
 	font-size: 20px;
 	padding: 31px 0  11px 21px;
 	font-family: 'Oswald', sans-serif;
 	color: #4F4F4F;
 }
-
-
 
 /*Cards*/
 .hk-card {
@@ -319,7 +274,6 @@ body {
 	height: 214px;
 	position: relative; /*má ekki breyta þessu*/
 }
-
 .hk-cardTitle span {
 	float: right;
 	padding: 70px 25px 35px 0px;
@@ -332,7 +286,6 @@ body {
 	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
 	position: relative; /*má ekki breyta þessu*/ 
 }
-
 .hk-undertitle span {
 	float: right;
 	top: 145px;
@@ -349,7 +302,6 @@ body {
 	left: 1px;
 	position: relative; /*má ekki breyta þessu*/
 }
-
 .hk-card:after {
    	height: 100%;
     /*width: 100px;*/
@@ -363,11 +315,9 @@ body {
     border-right: 100% solid transparent;
     width: 68%; 
 }
-
 .hk-acters span {
 	display: none;
 }
-
 .hk-ratingCircle {
 	position: absolute;
 	right: 21px;
@@ -381,7 +331,6 @@ body {
 	border-radius: 50px;
 	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
 }
-
 .hk-ratingCircle span {
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
@@ -391,17 +340,13 @@ body {
 	bottom: 6px;
 }
 
-
-
 /*footer*/
  .hk-bannerfooter {
 	background: linear-gradient(#FAA20E, #E7833B);
 	height: 305px;
 	width: 100%;
 	margin-top: 60px;
-
 }
-
 .footerlogo {
 	display: inline-block;
 	position: relative;
@@ -412,9 +357,6 @@ body {
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-
-
-
 .centerlinks ul li a {
 	color: #fff;
 	font-size: 14px;
@@ -425,9 +367,7 @@ body {
 	top: 80px;
 	position: relative;
 	padding-top: 30px;
-	
 }
-
 .copyright span {
 	font-family: 'Oswald', sans-serif;
 	font-size: 12px;
@@ -437,12 +377,8 @@ body {
   	top: 120px;
 	position: relative;
 }
-
-
-
 .superslider {
 	padding-left: 0px;
-
 }
 
 

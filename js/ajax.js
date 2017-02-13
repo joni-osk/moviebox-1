@@ -13,4 +13,24 @@ r.onreadystatechange = function () {
 	//container.append(title);
 	//document.body.append(container);
 };
-r.send("banana=yellow");
+r.send();
+
+
+
+ //fyrir kvikmyndir.is
+
+var AJAX = new XMLHttpRequest();
+AJAX.open("GET", "http://api.kvikmyndir.is/movies"); // alltaf "GET", - hér skiptir maður út movies fyrir það sem maður vill ná í úr apanum
+AJAX.setRequestHeader("x-access-token","eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJfaWQiOiI1OGExYTBjYWQxM2U2YmQ4NzJlZjZkZjIiLCJnbG9iYWxhZG1pbiI6ZmFsc2UsImFkbWluIjpmYWxzZSwiYWN0aXZlIjp0cnVlLCJmdWxsbmFtZSI6IkhyZWZuYSBLcmlzdGJqw7ZybnNkw7N0dGlyIiwiZW1haWwiOiJocmVmbmF0aG9yZXlAZ21haWwuY29tIiwidXNlcm5hbWUiOiJocmVmbmF0aCIsInBhc3N3b3JkIjoiJDJhJDA4JHdrRXFFczZUb2R6cjc4LkQ2dFhvT2VnLm9EWmYuRUljWm5NODd0OERBL2g5YmlVTzVoRWRxIiwiZG9tYWluIjoidmVmc2tvbGkuaXMiLCJtZXNzYWdlIjoic21hbGwgc2Nob29sIHByb2RqZWN0IiwiaWF0IjoxNDg2OTg3NDc5LCJleHAiOjE0ODcwNzM4Nzl9.yyipkgLXOypMm2u9hvZWcR50rwsfFhU9yJgewaBKLMc"); // key númerið sem maður fær
+AJAX.onreadystatechange = function() {
+	if(AJAX.readyState != 4 || AJAX.status != 200) { // 4 - svar frá servernum og fer niður í const response...verður að vera 200 til að fá upplýsingarnar úr apanaum
+		return;
+	}
+	const response = JSON.parse(AJAX.responseText) // const því innihaldið breytist ekki
+	// data = AJAX.responseText;
+	console.log(response);
+}
+AJAX send();
+
+
+
