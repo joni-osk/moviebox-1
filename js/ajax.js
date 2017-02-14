@@ -8,6 +8,8 @@ r.onreadystatechange = function () {
 
 	const mostpopular = response.results; // tók út arrey til að fá allar myndirnar en ekki bara eina
 	const mpmovie = new Render (mostpopular);
+	//const genremovie = new Render (genre);
+
 //console.log(mostpopular);
 	//const container = document.createElement("div");
 	//const image = document.createElement("img");

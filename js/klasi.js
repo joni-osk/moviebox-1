@@ -2,7 +2,7 @@
 
 // classar efst í kóðanum - before other codes use them
 // Inni í class skilgreinum við methods 
-class Movie { 
+class MostpopularMovie { 
 	// fyrsta sem við gerum er að gera constructor
 	// kóðinn sem lifir inni í constuctornum geymir upplýsingar, en gerir ekkert
 	//þangað til við köllum á þær upplýsingar með new keyword (new = ....) 
@@ -22,17 +22,35 @@ class Movie {
 	}
 }
 
-class Render extends Movie{ 
+class Render extends MostpopularMovie{ 
 	constructor ( mostpopular) {
 	super ( mostpopular)
 	for (var i = 0; i < mostpopular.length; i++) {
 		console.log(mostpopular[i].title);
 	//document.createElementbyID('mostpopular');
 	}
-
+for (var i = 0; i < mostpopular.length; i++) {
+	//document.createElementbyID('mostpopular');
+	}
 
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 renderfrontpage = function(data) {
