@@ -1,30 +1,66 @@
 
-.rating-slider .ui-slider-tip {
+.rating-slider, .year-slider, .ui-slider-tip {
     visibility: visible;
     opacity: 1;
-    top: -30px;
-		border-radius: 50%; 
 }
 
 .rating-slider.ui-slider{
+	height: 10px;
+}
+
+.rating-slider, .year-slider, .ui-slider-pips {
+	 
+}
+.rating-slider, .year-slider, .ui-slider-float {
 	
 }
-.ui-slider-pips {}
-.ui-slider-float {}
-.ui-slider-handle {}
-.ui-slider-tip {}
-.ui-slider-pip {}
-.ui-slider-pip-nth {}
-.ui-slider-line {}
-.ui-slider-label {}
-.ui-slider-tip-label {}
-.ui-slider-pip-hide {}
-.ui-slider-pip-last {}
-.ui-slider-pip-first {}
-.ui-slider-pip-label {}
-.ui-slider-pip-inrange {}
-.ui-slider-pip-initial {}
-.ui-slider-pip-selected {}
-.ui-slider-pip-initial-nth {}
-.ui-slider-pip-selected-nth {}
+.rating-slider, .year-slider, .ui-slider-handle {
+	border: 1px;
+}
+.rating-slider, .year-slider, .ui-slider-tip {
+	display: block;
+	visibility: visible;
+}
+.rating-slider, .year-slider, .ui-slider-pip {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-nth {
+	
+}
+.rating-slider, .year-slider, .ui-slider-line {
+	
+}
+.rating-slider, .year-slider, .ui-slider-label {
+	
+}
+.rating-slider, .year-slider, .ui-slider-tip-label {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-hide {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-last {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-first {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-label {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-inrange {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-initial {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-selected {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-initial-nth {
+	
+}
+.rating-slider, .year-slider, .ui-slider-pip-selected-nth {
+	
+}
 

@@ -16,3 +16,22 @@ $(".rating-slider")
     .slider("float", {
         handle: true
     });
+
+$(".year-slider")
+    .slider({
+				min: 1888,
+				max: 2017,
+				range: true,
+				values: [1888,2017]
+	
+		})
+    .slider("pips", {
+        first: "lable",
+				last: "lable",
+				rest: false,
+				step: 5
+				
+    })
+    .slider("float", {
+        handle: true
+    });
