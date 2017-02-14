@@ -13,30 +13,85 @@ class Movie {
 	// tómt properties sem default stillingu
 	// classinn Movie hefur þannig fjóra parameters 
 	//(title, year, genre og ratingLeval)
-	constructor ( {title, year, genre, ratingLevel} = {}) { 
-		this.title = data.title;  // title er property
-		this.year = data.year;  // year er property
-		this.genre = data.genre;  // genre er property
+	constructor ( mostpopular) { 
+		this.mostpopular = mostpopular;  // title er property
+		//this.release_date = release_date;  // year er property
+		//this.genre = genre;  // genre er property
 		// ratingLevel er property - og verður stillt á milli 1-10		
-		this.ratingLevel = data.ratingLevel; 
+		//this.ratingLevel = data.ratingLevel;
 	}
 }
 
+class Render extends Movie{ 
+	constructor ( mostpopular) {
+	super ( mostpopular)
+	for (var i = 0; i < mostpopular.length; i++) {
+		console.log(mostpopular[i].title);
+	//document.createElementbyID('mostpopular');
+	}
+
+
+	}
+}
+
+
+renderfrontpage = function(data) {
+	document.getElementById('popular01');
+	document.body.appendChild (this.title);
+}
+
+
+
+renderdetails = function(data) {
+
+}
+
+
+
+
+// til þess að nota ajax skjalið - eða e-h annarsstaðar - einfalda vinnuna annars starðar 
+
+
+
+/*
 // Hér er ég að kalla á keyword - og þannig ná í upplýsingar úr constructor-num:
 
-//breyta: let - því innihaldið getur breyst
+//breyta: const a 
 // inn í slaufusviganum á að koma object
-let movieGenre = new movie ([
-	'comedy', // 0
-	'action', // 1
-	'romance', // 2
-	'horror',// 3
-	'drama' // 4
-	]); {
+const movieGenre = new movie (
 
+	); {
 
 }; 
 
+
+
+
+
+
+/*
+const movieRating = new rating ([
+	'1', // 0
+	'2', // 1
+	'3', // 2
+	'4',// 3
+	'5' // 4
+	'6', // 5
+	'7', // 6
+	'8', // 7
+	'9',// 8
+	'10' // 9
+	]); {
+
+}; 
+
+class rating {
+	constructor(rating){
+		this.id = genre.id;
+		this.number = genre.number;
+		return this;
+	}
+}
 
 class MovieGenre {
 	genreType() {
