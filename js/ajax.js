@@ -102,6 +102,3 @@ AJAX.onreadystatechange = function() {
 //let consoleItem = new MdbAjax();
 //console.log(consoleItem.makeAjaxCall());
 	
-
-
-
