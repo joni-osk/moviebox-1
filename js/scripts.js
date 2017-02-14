@@ -45,6 +45,9 @@ $(document).ready(function(){
 });
 
 
+
+
+
 // classar efst í kóðanum - before other codes use them
 // Inni í class skilgreinum við methods 
 class Movie { 
@@ -65,21 +68,94 @@ class Movie {
 		// ratingLevel er property - og verður stillt á milli 1-10		
 		this.ratingLevel = data.ratingLevel; 
 	}
-}
 
-// Hér er ég að kalla á keyword - og þannig ná í upplýsingar úr constructor-num:
+//method er bara function sem tilheyrir classa:
+
+	genreOfMovie() {
+		console.log (this.genre + "");
+	}
+
+// til þess að nota classann: 
+// Hér fyrir neðan er ég að kalla á keyword - og þannig ná í upplýsingar úr constructor-num:
 
 //breyta: let - því innihaldið getur breyst
-// inn í slaufusviganum á að koma object
-let movieGenre = new movie ([
+//breytan movieGenre geymir arrey af mögulegum genre tegundum
+let movieGenre = new movie ([ //ath á að vera lítið m hér?
 	'comedy', // 0
 	'action', // 1
 	'romance', // 2
 	'horror',// 3
-	'drama' // 4
+	'drama', // 4
+	'popular'// 5
 	]); {
+
+// nú veður að kalla á let
 
 
 }; 
 
+}
 
+
+// til þess að nota extend - þarf að búa til annan classa með constructor
+
+class = popular {
+	//constructorinn tekur inn það sama og classinn Movie
+	constuctor(title, year, genre, ratingLevel) { 
+
+// hér væri hægt að copy-pasta það sem er í movie structornum (this.title...)
+//en fljótlegri leið er að nota super method ið:
+
+super.(title, year, genre, ratingLevel);
+
+	}
+}
+
+// til þess að nota þetta verðum við að fara út fyrir class ann og búa til breytu
+//og svo væntanæega get
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let comedy = movieGenre.comedy;
+return(); //
+
+let action = movieGenre.action;
+return(); //
+
+let romance = movieGenre.romance;
+return(); //
+
+let horror = movieGenre.horror;
+return(); //
+
+let drama = movieGenre.drama;
+return(); //
+
+let popular = movieGenre.popular;
+return(); //
+
+//þarf að nota extends
+
+//þarf að vinna með for loop
+
+*/
