@@ -84,7 +84,7 @@ body {
 /*Cards*/
 .hk-card {
     height: 406px;
-    width: 345px;
+    max-width: 345px;
     border: 2px solid white;
     box-sizing: border-box;
     box-shadow: 0 2px 8px rgba(0,0,0, .3);
@@ -270,13 +270,14 @@ body {
 /*Cards*/
 .hk-card {
 	background-color: #999;
-	width: 333px;
+	max-width: 333px;
 	height: 214px;
-	position: relative; /*má ekki breyta þessu*/
+	position: relative;
 }
+
 .hk-cardTitle span {
 	float: right;
-	padding: 70px 25px 35px 0px;
+	padding: 70px 10px 35px 0px;
 	z-index: 5;
 	top:0;
 	left:0;
@@ -290,7 +291,7 @@ body {
 	float: right;
 	top: 145px;
 	margin-top: 0px;
-	margin-right: -90px;
+	margin-right: -80px;
 	z-index: 5;
 	padding-top: 28px;
     padding-bottom: 18px;
@@ -313,7 +314,7 @@ body {
     border-bottom: 214px solid rgba(255,255,255,.8);
     border-left: 90px solid transparent;
     border-right: 100% solid transparent;
-    width: 68%; 
+    width: 88%; 
 }
 .hk-acters span {
 	display: none;
@@ -383,34 +384,8 @@ body {
 
 
 
-@media (min-width: 480px) and (max-width: 600px) {
-  
-.hk-cardTitle span {
-	float: right;
-	padding: 70px 120px 35px 0px;
-	z-index: 5;
-	top:0;
-	left:0;
-	font-family: 'Oswald', sans-serif;
-	color: #4F4F4F;
-	font-size: 30px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-	position: relative; /*má ekki breyta þessu*/ 
-}
 
-.hk-card:after {
-   	height: 100%;
-    /*width: 100px;*/
-    /*background-color: rgba(255,255,255,.7);*/
-    content: "";
-    position: absolute;
-   	top: 0;
-    right: 0;
-    border-bottom: 214px solid rgba(255,255,255,.8);
-    border-left: 100% solid transparent;
-    border-right: 100% solid transparent;
-    width: 100%; 
-}
+
 
 
 
