@@ -1,5 +1,3 @@
-
-
 // classar efst í kóðanum - before other codes use them
 // Inni í class skilgreinum við methods 
 class MostpopularMovie { 
@@ -35,21 +33,6 @@ for (var i = 0; i < mostpopular.length; i++) {
 
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
