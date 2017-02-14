@@ -1,3 +1,4 @@
+/*
 // classar efst í kóðanum - before other codes use them
 // Inni í class skilgreinum við methods 
 class MostpopularMovie { 
@@ -24,18 +25,22 @@ class Render extends MostpopularMovie{
 	constructor ( mostpopular) {
 	super ( mostpopular)
 	for (var i = 0; i < mostpopular.length; i++) {
-		console.log(mostpopular[i].title);
-	//document.createElementbyID('mostpopular');
-	}
-for (var i = 0; i < mostpopular.length; i++) {
-	//document.createElementbyID('mostpopular');
-	}
+		console.log(mostpopular[i].original_title + " " + mostpopular[i].release_date + " " + mostpopular[i].genre_ids + " " + mostpopular[i].vote_average);
+	
 
 	}
-}
+//document.createElementbyID('mostpopular');
+//let movieTitle = document.getElementbyID('original_title');{
 
 
 
+let movieTitle = document.createElement("original_title");
+    movieTitle.innerHTML = "";
+    render.appendChild(movieTitle);
+
+
+
+/*
 renderfrontpage = function(data) {
 	document.getElementById('popular01');
 	document.body.appendChild (this.title);
@@ -43,9 +48,38 @@ renderfrontpage = function(data) {
 
 
 
-renderdetails = function(data) {
+/*renderdetails = function(data) {
 
 }
+
+
+/*
+class Movietitle { 
+	// fyrsta sem við gerum er að gera constructor
+	// kóðinn sem lifir inni í constuctornum geymir upplýsingar, en gerir ekkert
+	//þangað til við köllum á þær upplýsingar með new keyword (new = ....) 
+	//sem lifir fyrir utan constructor-inn
+	
+
+	// fyrri slaufusvíginn er object - sem hefur (seinni slaufusviginn) 
+	// tómt properties sem default stillingu
+	// classinn Movie hefur þannig fjóra parameters 
+	//(title, year, genre og ratingLeval)
+	constructor ( movietitle) { 
+		this.movietitle = movietitle;  // title er property
+		//this.release_date = release_date;  // year er property
+		//this.genre = genre;  // genre er property
+		// ratingLevel er property - og verður stillt á milli 1-10		
+		//this.ratingLevel = data.ratingLevel;
+	}
+}
+
+
+
+
+
+
+
 
 
 
@@ -173,3 +207,56 @@ class Movie extends MovieGenre {
 */
 //klasi - geymir upplýsingar en gerir ekkert þangað til við köllum á uppl´tsyngarnar
 //með new= .... 
+
+
+
+
+
+let arrayOfMovies = [];   
+
+class Movie {
+      
+    //(title, year, genre og ratingLeval)
+    constructor ( mostpopular) { 
+    //debugger;
+      	for( var i = 0; mostpopular.length > i; i++)
+        {
+        this.title = mostpopular[i].title;  // title er property // i ið hjálpar okkur að komast inn í array
+        this.release_date = mostpopular[i].release_date;  // year er property
+        this.genreIds = mostpopular[i].genre_ids;  // genre er property
+        this.movieId = mostpopular[i].id
+        
+        // ratingLevel er property - og verður stillt á milli 1-10        
+        this.ratingLevel = mostpopular[i].vote_average;
+        this.mostpopular = mostpopular[i].popularity
+        this.description = mostpopular[i].overview
+        this.backdrop = mostpopular[i].backdrop_path
+        this.posterPath = mostpopular[i].poster_path
+        
+        arrayOfMovies.push(this);
+
+console.log(this);
+
+        };
+    }
+    
+    getMostPopulerMovie(){ 
+		arrayOfMovies.ForEach(function(movie){
+
+		});
+}
+    
+    /*getAllPopulerMovies(){
+        return arrayOfMovies
+    }*/
+}
+
+class MostpopularMovie extends Movie { 
+    constructor ( mostpopular) {
+    super ( mostpopular)
+    }
+    
+    RenderMovies(){
+        
+    }
+}

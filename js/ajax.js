@@ -7,7 +7,8 @@ r.onreadystatechange = function () {
 	const response = JSON.parse(r.responseText);
 
 	const mostpopular = response.results; // tók út arrey til að fá allar myndirnar en ekki bara eina
-	const mpmovie = new Render (mostpopular);
+	const mpmovie = new MostpopularMovie(mostpopular);
+
 	//const genremovie = new Render (genre);
 
 //console.log(mostpopular);
