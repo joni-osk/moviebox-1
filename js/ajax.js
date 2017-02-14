@@ -5,6 +5,7 @@ r.onreadystatechange = function () {
   if (r.readyState != 4 || r.status != 200) return;
 //  alert("Success: " + r.responseText);
 	const response = JSON.parse(r.responseText);
+
 	const mostpopular = response.results; // tók út arrey til að fá allar myndirnar en ekki bara eina
 	const mpmovie = new Render (mostpopular);
 //console.log(mostpopular);
@@ -16,6 +17,8 @@ r.onreadystatechange = function () {
 	//container.append(image);
 	//container.append(title);
 	//document.body.append(container);
+	
+
 };
 r.send();
 
