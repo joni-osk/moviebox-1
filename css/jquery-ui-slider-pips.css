@@ -5,6 +5,7 @@
 /* increase bottom margin to fit the pips */
 .ui-slider-horizontal.ui-slider-pips {
   margin-bottom: 1.4em;
+
 }
 
 /* default hide the labels and pips that arnt visible */
@@ -13,6 +14,7 @@
 .ui-slider-pips .ui-slider-label,
 .ui-slider-pips .ui-slider-pip-hide {
   display: none;
+
 }
 
 /* now we show any labels that we've set to show in the options */
@@ -41,10 +43,12 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+
 }
 
 .ui-state-disabled.ui-slider-pips .ui-slider-pip {
   cursor: default;
+
 }
 
 /* little pip/line position & size */
@@ -54,6 +58,7 @@
   height: 3px;
   position: absolute;
   left: 50%;
+   /*background-color: red;*/
 }
 
 /* the text label postion & size */
@@ -86,6 +91,7 @@
   left: 20px;
   margin-left: 0;
   margin-bottom: -0.5em;
+
 }
 
 /* vertical line/pip should be horizontal instead */
@@ -95,6 +101,7 @@
   position: absolute;
   top: 50%;
   left: 0;
+
 }
 
 .ui-slider-vertical.ui-slider-pips .ui-slider-label {
@@ -103,6 +110,7 @@
   margin-left: 0;
   margin-top: -0.5em;
   width: 2em;
+
 }
 
 /* FLOATING HORIZTONAL TOOLTIPS */
@@ -114,6 +122,7 @@
 .ui-slider-float .ui-slider-handle:focus .ui-slider-tip-label
 .ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip-label {
   outline: none;
+
 }
 
 /* style tooltips on handles and on labels */
@@ -129,13 +138,17 @@
   left: 50%;
   height: 20px;
   line-height: 20px;
-  background: white;
-  border-radius: 3px;
-  border: 1px solid #888;
+  /*background: white;*/
+  /*border-radius: 3px;*/
+  /*border: 1px solid #888;*/
   text-align: center;
-  font-size: 12px;
+  font-size: 16px;
   opacity: 0;
-  color: #333;
+   
+  color: #E84B33;
+  font-family: 'Roboto', sans-serif;
+
+
   -webkit-transition-property: opacity, top, visibility;
   transition-property: opacity, top, visibility;
   -webkit-transition-timing-function: ease-in;
@@ -154,6 +167,7 @@
 .ui-slider-float .ui-slider-handle.ui-state-focus .ui-slider-tip,
 .ui-slider-float .ui-slider-handle.ui-state-active .ui-slider-tip,
 .ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
+  /*color: #E84B33;*/
   opacity: 1;
   top: -30px;
   visibility: visible;
@@ -161,19 +175,22 @@
   transition-timing-function: ease-out;
   -webkit-transition-delay: 200ms, 200ms, 0ms;
   transition-delay: 200ms, 200ms, 0ms;
+
 }
 
 /* put label tooltips below slider */
 .ui-slider-float .ui-slider-pip .ui-slider-tip-label {
   top: 42px;
+
 }
 
 .ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
   top: 32px;
   font-weight: normal;
+
 }
 
-/* give the tooltip a css triangle arrow */
+/* give the tooltip a css triangle arrow 
 .ui-slider-float .ui-slider-tip:after,
 .ui-slider-float .ui-slider-pip .ui-slider-tip-label:after {
   content: " ";
@@ -186,8 +203,8 @@
   left: 50%;
   margin-left: -5px;
 }
-
-/* put a 1px border on the tooltip arrow to match tooltip border */
+*/
+/* put a 1px border on the tooltip arrow to match tooltip border 
 .ui-slider-float .ui-slider-tip:before,
 .ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
   content: " ";
@@ -230,6 +247,7 @@
   transition-property: opacity, left, visibility;
   -webkit-transition-delay: 0, 0, 200ms;
   transition-delay: 0, 0, 200ms;
+
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-handle:hover .ui-slider-tip,
@@ -241,11 +259,13 @@
   top: 50%;
   margin-top: -11px;
   left: -50px;
+
 }
 
 /* put label tooltips to right of slider */
 .ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label {
   left: 47px;
+
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-pip:hover .ui-slider-tip-label {
@@ -265,6 +285,7 @@
   margin-left: 0;
   top: auto;
   left: auto;
+
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-tip:before,
@@ -286,6 +307,7 @@
   border-right-color: white;
   right: auto;
   left: -10px;
+
 }
 
 .ui-slider-vertical.ui-slider-float .ui-slider-pip .ui-slider-tip-label:before {
@@ -301,6 +323,7 @@
 .ui-slider-pips [class*=ui-slider-pip-initial] {
   font-weight: bold;
   color: #14CA82;
+  
 }
 
 .ui-slider-pips .ui-slider-pip-initial-2 {
@@ -323,4 +346,5 @@
 .ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-line,
 .ui-slider-pips .ui-slider-pip-inrange .ui-slider-line {
   background: black;
+
 }
