@@ -1,4 +1,6 @@
-function renderType(listType, APIPath) {
+var arrayOfGenres = [];
+
+function renderType(listType, APIPath, isGenre) {
 	//MODB api
 	var r = new XMLHttpRequest(); 
 	r.open("GET", 'https://api.themoviedb.org/3'+ APIPath +'?api_key=e72b9a3547c05a93b2bd985d1db338fa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1', true);
@@ -9,28 +11,45 @@ function renderType(listType, APIPath) {
 
 		console.log(response);
 		const movieList = response;
-		const mpmovie = new Movie(listType, movieList);
-		mpmovie.render();
+			
+		if (!isGenre) //! = not - ef true þá er það false og öfugt.
+			{ 
+				const mpmovie = new Movie(listType, movieList);
+				mpmovie.render();
+				}
+		else {
+			for(var i = 0; i < movieList.genres.length; i++){
+				arrayOfGenres.push(new Genre(movieList.genres[i]));
+			}
+		}
 		
-
+		
+		
 	};
 	r.send();
 
 }
 
 
+// Render Genre
+renderType('genre', '/genre/movie/list', true);
 
 // Render Popular
-renderType('popular', '/discover/movie');
+renderType('popular', '/discover/movie', false);
 
 // Render Comedy
-renderType('comedy', '/genre/35/movies');
+renderType('comedy', '/genre/35/movies', false);
 
 // Render Romance
-renderType('romance', '/genre/10749/movies');
+renderType('romance', '/genre/10749/movies', false);
 
 // Render Action
-renderType('action', '/genre/28/movies');
+renderType('action', '/genre/28/movies', false);
+
+
+
+
+
 
 
 
