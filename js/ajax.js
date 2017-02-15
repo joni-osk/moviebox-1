@@ -1,5 +1,5 @@
 function renderType(listType, APIPath) {
-//breyting
+//breyting.
 	//MODB api
 	var r = new XMLHttpRequest(); //hluti af javascript
 	r.open("GET", 'https://api.themoviedb.org/3'+ APIPath +'?api_key=e72b9a3547c05a93b2bd985d1db338fa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1', true);
