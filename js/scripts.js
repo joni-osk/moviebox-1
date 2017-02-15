@@ -1,5 +1,6 @@
+/*
 $(document).ready(function(){
-	$('.superslider').slick({
+	$('.superslider').not("#popular, #comedy, #romance, #action,	").slick({
   dots: false,
   infinite: true,
   speed: 400,

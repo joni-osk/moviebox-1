@@ -1,29 +1,49 @@
-//MODB api
-var r = new XMLHttpRequest(); //hluti af javascript
-r.open("GET", 'https://api.themoviedb.org/3/discover/movie?api_key=e72b9a3547c05a93b2bd985d1db338fa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1', true);
-r.onreadystatechange = function () {
-  if (r.readyState != 4 || r.status != 200) return;
-//  alert("Success: " + r.responseText);
-	const response = JSON.parse(r.responseText);
+function renderType(listType, APIPath) {
 
-	const mostpopular = response.results; // tók út arrey til að fá allar myndirnar en ekki bara eina
-	const mpmovie = new MostpopularMovie(mostpopular);
+	//MODB api
+	var r = new XMLHttpRequest(); //hluti af javascript
+	r.open("GET", 'https://api.themoviedb.org/3'+ APIPath +'?api_key=e72b9a3547c05a93b2bd985d1db338fa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1', true);
+	r.onreadystatechange = function () {
+	  if (r.readyState != 4 || r.status != 200) return;
+	//  alert("Success: " + r.responseText);
+		const response = JSON.parse(r.responseText);
 
-	//const genremovie = new Render (genre);
+		console.log(response);
+		const movieList = response; // tók út arrey til að fá allar myndirnar en ekki bara eina
+		const mpmovie = new Movie(listType, movieList);
+		mpmovie.render();
 
-//console.log(mostpopular);
-	//const container = document.createElement("div");
-	//const image = document.createElement("img");
-	//const title = document.createElement("h1");
-	//image.src = "http://image.tmdb.org/t/p/original" + response.backdrop_path;
-	//title.innerHTML = response.original_title;
-	//container.append(image);
-	//container.append(title);
-	//document.body.append(container);
-	
+		//const genremovie = new Render (genre);
 
-};
-r.send();
+	//console.log(mostpopular);
+		//const container = document.createElement("div");
+		//const image = document.createElement("img");
+		//const title = document.createElement("h1");
+		//image.src = "http://image.tmdb.org/t/p/original" + response.backdrop_path;
+		//title.innerHTML = response.original_title;
+		//container.append(image);
+		//container.append(title);
+		//document.body.append(container);
+		
+
+	};
+	r.send();
+
+}
+
+
+
+// Render Popular
+renderType('popular', '/discover/movie');
+
+// Render Comedy
+renderType('comedy', '/genre/35/movies');
+
+// Render Romance
+renderType('romance', '/genre/10749/movies');
+
+// Render Action
+renderType('action', '/genre/28/movies');
 
 
 
