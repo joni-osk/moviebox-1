@@ -1,4 +1,3 @@
-//Upplýsingar frá MODB api
 function onclick(a,b){
 	debugger;
 }

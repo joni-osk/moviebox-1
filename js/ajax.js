@@ -68,8 +68,12 @@ AJAX.onreadystatechange = function() {
 	console.log(response);
 };
 
-//AJAX send();
 
+
+
+
+
+/*---Hér fyrir neðan eru classar fyrir Ajax sem virka ekki eins og staðan er---*/
 
 
 //class AJAX {
