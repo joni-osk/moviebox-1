@@ -11,6 +11,14 @@ $(".rating-slider")
 				last: "lable",
 				rest: false,
 				step: 5
+
+				
+    })
+    .slider("pips", {
+        first: "lable",
+				last: "lable",
+				rest: false,
+				step: 5
 				
 				
     })
@@ -35,7 +43,13 @@ $(".year-slider")
     })
     .slider("float", {
         handle: true
+
+        
     });
+
+
+
+
 
 
 

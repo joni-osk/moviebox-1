@@ -4,7 +4,7 @@
 #coloredSlider {
 	float: left;
 	clear: left;
-	width: 600px;
+	width: 1050px;
 	margin: 15px;
 }
 #coloredSlider .ui-slider-range { 
@@ -36,14 +36,9 @@
 
 
 
-
-
-
-
-
 .search-slider-rating h3 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
+	font-size: 40px;
 	color: #4F4F4F;
 	padding-bottom: 25px;
 }
@@ -51,26 +46,20 @@
 
 .search-slider-year h3 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 18px;
+	font-size: 40px;
 	color: #4F4F4F;
 	padding-top: 100px;
 	padding-bottom: 25px;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.genre h3 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+	color: #4F4F4F;
+	padding-top: 100px;
+	padding-bottom: 25px;
+}
 
 
 .rating-slider, .year-slider, .ui-slider-tip {
@@ -84,6 +73,46 @@
 	height: 10px;
 
 }
+
+
+
+.shape {
+	background: #E84B33;
+	border-radius: 30px;
+	width: 238px;
+	height: 75px;
+	float: right;
+	margin-right: 30px;
+	margin-top: 50px;
+
+}
+
+
+/*.ui-slider-handle .ui-corner-all .ui-state-default::after {
+	background: #E84B33;
+	border-radius: 30px;
+	width: 30px;
+	height: 30px;
+
+	float: right;
+	margin-right: 30px;
+	margin-top: 50px;
+
+}
+*/
+
+
+
+
+.shape h3 {
+	text-align: center;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 28px;
+	color: #fff;
+	margin-top: -80px;
+
+}
+
 
 .rating-slider, .year-slider, .ui-slider-pips {
 	 
@@ -101,8 +130,35 @@
 	display: block;
 	visibility: visible;
 	
-
 }
+
+
+
+.genre {
+	width: 192px;
+	height: 61px;
+	background: #E84B33; 
+	border-radius: 20px;
+	padding-top: 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .rating-slider, .year-slider, .ui-slider-pip {
 	
 }
@@ -145,4 +201,6 @@
 .rating-slider, .year-slider, .ui-slider-pip-selected-nth {
 	
 }
+
+
 
