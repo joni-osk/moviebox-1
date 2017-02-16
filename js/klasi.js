@@ -1,6 +1,15 @@
-function onclick(a,b){
-	debugger;
+function openMovieModal(id, listType){
+	console.log(listType,mLists);
+	const movie = mLists[listType].filter(mov => mov.id ===id)[0];
+	console.log(id);
+	console.log(movie.id);
+	$('#modalContent').empty();
+	$('#modalContent').append('<h1>' + movie.title + '</h1>');
+	
+	$('#movieModal').modal('toggle')
+	
 }
+
 class Movie {
   constructor (listType, movieList) { 
 		this.listType = listType;
@@ -19,7 +28,6 @@ class Movie {
 		}
 	
     render() {
-    	
     	let listContainerDOM = document.getElementById(this.listType);
       	for( var i = 0; i < this.movieList.results.length; i++){
       		let moviediv = document.createElement("div")
@@ -27,7 +35,8 @@ class Movie {
 					moviediv.className = "slide-single";
       		moviediv.innerHTML = 
 						'\<div id="' + this.movieList.results[i].id 
-					+ '" onclick="onclick()" class="hk-card">\
+					+ '" onclick="openMovieModal(' + this.movieList.results[i].id 
+					+ ",'" + this.listType + "'" + ')" class="hk-card">\
 					<img class="hk-card img" src="https://image.tmdb.org/t/p/w780' + this.movieList.results[i].poster_path + '">\
 					<div class="hk-cardTitleDesktop">\
 						<span>' + this.movieList.results[i].title + '</span>\

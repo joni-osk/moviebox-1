@@ -16,11 +16,12 @@ Dökk brúnn: #220D0B
 
 .ir-title {
 	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
+	font-size: 60px;
 }
 
 .ir-subtitle {
 	font-family: 'Roboto Condensed', sans-serif;
+	padding-top: 1em;
 }
 
 /*--- MYNDA/VIDEO BANNER ---*/
@@ -83,22 +84,128 @@ Dökk brúnn: #220D0B
 }
 
 .ir-poster {
-		position: relative;
-		bottom: 30vh;
-	}
+	position: relative;
+	bottom: 35vh;
+}
 
 .ir-poster img {
-		width: 100%;
-		height: auto;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	}
+	width: 100%;
+	height: auto;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+	
+.ir-rate-bubble {
+	position: absolute;
+	right: 15vw;
+	bottom: 10vh;
+	width: 90px;
+	height: 90px;
+	background: #E7833B ;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+}
 
+.ir-rating {
+	font-family: 'Roboto', sans-serif;
+	font-size: 35px;
+	color: #fff;
+	position: absolute;
+	left: 0.60em;
+	top: 0.2em;
+}
+
+.ir-of-ten {
+	font-family: 'Roboto', sans-serif;
+	display: block;
+	text-align: center;
+	padding-top: 48px;
+	color: #fff;
+	font-size: 12px;
+}
+
+.ir-year,
+.ir-duration {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+	
+.ir-year h5,
+.ir-duration h5 {
+	line-height: 0;
+	font-size: 25px;
+	color: #3D6390;
+	font-weight: 600;
+}
+
+.ir-year p,
+.ir-duration p{
+	font-size: 15px;
+	padding-bottom: 0.5em;
+}
+
+.ir-director-writer {
+	padding: 0em 1em;
+}
+
+.ir-director,
+.ir-writer {
+	font-size: 20px;
+}
+
+.ir-storyline h2,
+.ir-cast h2,
+.ir-stills h2,
+.ir-related h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 40px;
+}
+
+.ir-plot {
+	display: none;
+}
+
+.ir-storyline p {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 15px;
+	line-height: 2rem;
+}
+
+.year-duration-desktop {
+	display: block;
+	font-family: 'Roboto Condensed', sans-serif;
+	padding: 1em 0;
+}
+
+.year-duration-desktop h5 {
+	font-size: 18px;
+}
+
+.year-duration-mobile{
+	display: none;
+}
+
+.ir-year-desktop {
+	color:#3D6390;
+	font-family: 'Oswald', sans-serif;
+	padding: 1em 0;
+}
+
+.ir-subtitle {
+	display: none;
+}
 
 
 
 /*---MOBILE---*/
 
 @media all and (max-width: 600px) {
+	
+	
+	.ir-title {
+		font-family: 'Oswald', sans-serif;
+		font-size: 30px;
+	}
 	
 	.ir-about-banner {
 		min-height: 320px;
@@ -132,7 +239,7 @@ Dökk brúnn: #220D0B
 	.ir-rate-bubble {
 		position: absolute;
     right: 10vw;
-    bottom: 69.5vh;
+    bottom: 45vh;
     width: 50px;
     height: 50px;
     background: #E7833B ;
@@ -192,6 +299,21 @@ Dökk brúnn: #220D0B
 		line-height: 2rem;
 	}
 	
+	.year-duration-mobile{
+		display: block;
+	}
+	
+	.year-duration-desktop {
+		display: none;
+	}
+
+	.ir-year-desktop {
+		display: none;
+	}
+	
+	.ir-subtitle {
+		display: block;
+	}
 
 
 /*VideoSlider*/
