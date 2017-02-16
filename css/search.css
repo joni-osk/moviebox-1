@@ -40,7 +40,8 @@
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	color: #4F4F4F;
-	padding-bottom: 25px;
+	padding-bottom: 70px;
+	padding-top: 50px;
 }
 
 
@@ -49,8 +50,17 @@
 	font-size: 40px;
 	color: #4F4F4F;
 	padding-top: 100px;
-	padding-bottom: 25px;
+	padding-bottom: 70px;
 }
+
+
+
+
+
+
+
+
+
 
 
 .genre h3 {
@@ -75,7 +85,6 @@
 }
 
 
-
 .shape {
 	background: #E84B33;
 	border-radius: 30px;
@@ -86,6 +95,11 @@
 	margin-top: 50px;
 
 }
+
+
+
+
+
 
 
 /*.ui-slider-handle .ui-corner-all .ui-state-default::after {
