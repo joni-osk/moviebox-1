@@ -12,6 +12,7 @@ $(".rating-slider")
 				rest: false,
 				step: 5
 				
+				
     })
     .slider("float", {
         handle: true
@@ -35,3 +36,10 @@ $(".year-slider")
     .slider("float", {
         handle: true
     });
+
+
+
+
+
+
+
