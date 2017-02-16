@@ -52,7 +52,7 @@ renderType('action', '/genre/28/movies', false);
 
 
 
-
+/*---Kvikmyndir.is apinn virkar ekki---*/
 //kvikmyndir.is api
 var AJAX = new XMLHttpRequest();
 AJAX.open("GET", "http://api.kvikmyndir.is/movies", true); 

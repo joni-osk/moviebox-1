@@ -35,9 +35,6 @@ class Movie {
 					<div class="hk-undertitle">\
 						<span>' + this.findGenre(this.movieList.results[i].genre_ids) + '</span>\
 					</div>\
-					<div class="hk-acters">\
-						<span>Felicity Jones Diego Luna Forest Whitaker</span>\
-					</div>\
 					<div class="hk-ratingCircle">\
 						<span>' + this.movieList.results[i].vote_average + '</span>\
 					</div>\
@@ -46,16 +43,19 @@ class Movie {
       		listContainerDOM.appendChild(moviediv);
       	}
       	$(listContainerDOM).slick({
-					dots: false,
+					dots: true,
 					infinite: true,
 					speed: 400,
-					slidesToShow: 4.03,
+					slidesToShow: 4,
 					slidesToScroll: 4,
+					focusOnSelect: true,
+					arrows: true,
+					
 					responsive: [
 						{
 							breakpoint: 1024,
 							settings: {
-								slidesToShow: 3.03,
+								slidesToShow: 3,
 								slidesToScroll: 3,
 								infinite: true,
 								dots: true
@@ -75,7 +75,8 @@ class Movie {
 							settings: {
 							slidesToShow: 1.03,
 							slidesToScroll: 1,
-							dots: false
+							dots: false,
+							arrows: false
 							}
 						}
 		    // You can unslick at a given breakpoint now by adding:
