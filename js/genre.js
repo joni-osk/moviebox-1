@@ -1,6 +1,6 @@
 
 
-var arrayOfGenres = [
+const arrayOfGenres = [
   
     {
       "id": 28,
