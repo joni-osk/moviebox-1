@@ -1,4 +1,5 @@
 var arrayOfGenres = [];
+const mLists = {};
 
 function renderType(listType, APIPath, isGenre) {
 	//MODB api
@@ -11,6 +12,7 @@ function renderType(listType, APIPath, isGenre) {
 
 		console.log(response);
 		const movieList = response;
+		mLists[listType] = response.results;
 			
 		if (!isGenre) //! = not - ef true þá er það false og öfugt.
 			{ 
