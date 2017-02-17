@@ -1,7 +1,7 @@
-var arrayOfGenres = [];
-const mLists = {};
 
-function renderType(listType, APIPath, isGenre) {
+const mLists = {}; //object sem inniheldur upplýsingar úr öllum render type 
+
+function renderType(listType, APIPath) {
 	//MODB api
 	var r = new XMLHttpRequest(); 
 	r.open("GET", 'https://api.themoviedb.org/3'+ APIPath +'?api_key=e72b9a3547c05a93b2bd985d1db338fa&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1', true);
@@ -10,20 +10,15 @@ function renderType(listType, APIPath, isGenre) {
 	//  alert("Success: " + r.responseText);
 		const response = JSON.parse(r.responseText);
 
-		console.log(response);
+		//console.log(response);
 		const movieList = response;
 		mLists[listType] = response.results;
 			
-		if (!isGenre) //! = not - ef true þá er það false og öfugt.
-			{ 
-				const mpmovie = new Movie(listType, movieList);
-				mpmovie.render();
-				}
-		else {
-			for(var i = 0; i < movieList.genres.length; i++){
-				arrayOfGenres.push(new Genre(movieList.genres[i]));
-			}
-		}
+	
+		const mpmovie = new Movie(listType, movieList);
+		mpmovie.render();
+
+		
 		
 		
 		
@@ -33,20 +28,19 @@ function renderType(listType, APIPath, isGenre) {
 }
 
 
-// Render Genre
-renderType('genre', '/genre/movie/list', true);
+
 
 // Render Popular
-renderType('popular', '/discover/movie', false);
+renderType('popular', '/discover/movie');
 
 // Render Comedy
-renderType('comedy', '/genre/35/movies', false);
+renderType('comedy', '/genre/35/movies');
 
 // Render Romance
-renderType('romance', '/genre/10749/movies', false);
+renderType('romance', '/genre/10749/movies');
 
 // Render Action
-renderType('action', '/genre/28/movies', false);
+renderType('action', '/genre/28/movies');
 
 
 

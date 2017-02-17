@@ -1,6 +1,4 @@
 
-
-
 #coloredSlider {
 	float: left;
 	clear: left;
@@ -54,9 +52,10 @@
 }
 
 
-
-
-
+.search-logo img {
+	float: right;
+	padding-top: 50px;
+}
 
 
 
@@ -121,6 +120,7 @@
     height: 45px;
     padding-top: 200px;
     padding-bottom: 25px;
+     margin-top: -200px;
 
 }
 .form-style-8 textarea{
@@ -142,6 +142,7 @@
     padding: 8px 18px;
     text-decoration: none;
     text-transform: uppercase;
+
 }
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {

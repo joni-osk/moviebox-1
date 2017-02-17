@@ -1,17 +1,51 @@
-function openMovieModal(id, listType){
-	console.log(listType,mLists);
-	const movie = mLists[listType].filter(mov => mov.id ===id)[0];
-	console.log(id);
-	console.log(movie.id);
-	$('#modalContent').empty();
-	$('#modalContent').append('<h1>' + movie.title + '</h1>');
+
+//function sem virkjast þegar smellt er á mynd í slider
+function openMovieModal(id, listType){ // það sem er inn í sviganum er objects
+	//console.log(listType,mLists);
+	const movie = mLists[listType].filter(mov => mov.id ===id)[0]; // filter = býr til nýtt array með öllum upplýsingum, sem standast þær kröfur sem function-ið biður um. [0] = erum bara að leita að fyrsta í röðinni
+	console.log("mlists inniheldur: ", mLists);
+	console.log("movie inniheldur: ", movie);
+	//console.log(id);
+	//console.log(movie.id);
 	
-	$('#movieModal').modal('toggle')
+	//$('#modalContent').empty(); // verður fyrst að tæma modal-ið því annars bætast nýjar upplýsingar við þær gömlu - þarf ekki þessa skipun með því að bæta við html í línu fyrir neðan
+	$('#modalContent').html('<div class="hk-cardTitleDesktop"><span><h1>' + movie.title + '</span></h1></div>'); 
+	
+	$('#modalContent').append('<div class="hk-undertitle"><span>' + movie.genre_ids + '</span></div>'); {
+		
+	}
+
+
+	$('#modalContent').append ('<div class="hk-ratingCircle"><span>' + movie.vote_average + '</span></div>'); // append límir upplýsingar við upplýsingar
+
+
+
+	
+	//for loop  til þess að fá ekki alltaf sömu myndina upp og setja línuna fyrir neðan inn í hana
+
+	for (i = 0; i < movie.length; i++) { 
+
+
+    text += movie[i];
+}
+
+
+	$('#modalContent').append ('<img class="hk-card img" + src="https://image.tmdb.org/t/p/w780/34dxtTxMHGKw1njHpTjDqR8UBHd.jpg">' + '</img>');
+ 
+	//$('#modalContent').append ('<img src"/lubzBMQLLmG88CLQ4F3TxZr2Q7N.jpg"' + imgPath + '">'.load(function() {
+		//$(this).width(345px).height(406px).appendTo('#modalContent');
+
+	//});
+
+	
+	$('#movieModal').modal('toggle') //toogle = show() is run if an element is hidden. hide() is run if an element is visable
 	
 }
 
+
+
 class Movie {
-  constructor (listType, movieList) { 
+  constructor (listType, movieList) { //það sem er í sviganum er objects
 		this.listType = listType;
 		this.movieList = movieList;
 		}
@@ -20,22 +54,22 @@ class Movie {
 			let genre = []; 
 				for(var i = 0; i < ids.length; i++){
 					genre.push(arrayOfGenres.filter(function(item){
-						return item.id == ids[i]; //returnar objectinu sem hefur sama id og við erum að leita af
-					})[0].name); //erum bara að leita af einu í einu
+						return item.id == ids[i]; //returnar objectinu sem hefur sama id og við erum að leita að
+					})[0].name); //erum bara að leita að einu í einu
 				}
 			
 			return genre;
 		}
 	
     render() {
-    	let listContainerDOM = document.getElementById(this.listType);
+    	let listContainerDOM = document.getElementById(this.listType); 
       	for( var i = 0; i < this.movieList.results.length; i++){
       		let moviediv = document.createElement("div")
       		
-					moviediv.className = "slide-single";
+					moviediv.className = "slide-single"; //stakt card í myndaslider
       		moviediv.innerHTML = 
 						'\<div id="' + this.movieList.results[i].id 
-					+ '" onclick="openMovieModal(' + this.movieList.results[i].id 
+					+ '" onclick="openMovieModal(' + this.movieList.results[i].id //þegar smellt er á mynd virkjast openMovieModal function-ið
 					+ ",'" + this.listType + "'" + ')" class="hk-card">\
 					<img class="hk-card img" src="https://image.tmdb.org/t/p/w780' + this.movieList.results[i].poster_path + '">\
 					<div class="hk-cardTitleDesktop">\
@@ -51,6 +85,7 @@ class Movie {
       		//moviediv.text = "Movie Title: " + this.movieList.results[i].title;
       		listContainerDOM.appendChild(moviediv);
       	}
+    //myndasliderinn
       	$(listContainerDOM).slick({
 					dots: true,
 					infinite: true,
