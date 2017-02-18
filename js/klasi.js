@@ -75,14 +75,14 @@ class Movie {
 					+ '" onclick="openMovieModal(' + this.movieList.results[i].id //þegar smellt er á mynd virkjast openMovieModal function-ið
 					+ ",'" + this.listType + "'" + ')" class="hk-card">\
 					<img class="hk-card img" src="https://image.tmdb.org/t/p/w780' + this.movieList.results[i].poster_path + '">\
-					<div class="hk-cardTitleDesktop">\
-						<span>' + this.movieList.results[i].title + '</span>\
+					<div class="hk-cardTitle">\
+						<h2>' + this.movieList.results[i].title + '</h2>\
 					</div>\
 					<div class="hk-undertitle">\
-						<span>' + this.findGenre(this.movieList.results[i].genre_ids) + '</span>\
+						<h4>' + this.findGenre(this.movieList.results[i].genre_ids) + '</h4>\
 					</div>\
 					<div class="hk-ratingCircle">\
-						<span>' + this.movieList.results[i].vote_average + '</span>\
+						<h5>' + this.movieList.results[i].vote_average + '</h5>\
 					</div>\
 				</div>';
       		//moviediv.text = "Movie Title: " + this.movieList.results[i].title;
@@ -95,8 +95,8 @@ class Movie {
 					speed: 400,
 					slidesToShow: 4,
 					slidesToScroll: 4,
-					focusOnSelect: true,
-					arrows: true,
+					focusOnSelect: false,
+					arrows: false,
 					
 					responsive: [
 						{
@@ -114,7 +114,8 @@ class Movie {
 								slidesToShow: 2.03,
 								slidesToScroll: 2,
 								infinite: true,
-								dots: false
+								dots: false,
+								arrows: false,
 							}
 						},
 						{

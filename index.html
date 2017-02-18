@@ -9,6 +9,7 @@
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.css">
 		<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 <!--Fonts-->		
 		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
@@ -30,7 +31,7 @@
 					<img class="logo" src="img/moviebox-logo-shadow.svg">
 				</div>	
 				<div class="col-l-6 col-xs-6">
-  					<img class="logo-leit" src="img/LEIT.svg">
+  					<a href="search.html"><img class="logo-leit" src="img/LEIT.svg"></a>
   				</div>
 			</div>
 			<div class="row">
@@ -47,8 +48,7 @@
 			</div>
 		</div>
 <!--Popular slider-->
-        <div class="superslider" id="popular">
-		</div>	
+        <div class="superslider" id="popular"></div>	
 <!--end of Popular slider breytt .uppsetnign--> 
 <!--Comedy Catagory-->			
 		<div class="row">
@@ -57,8 +57,7 @@
 			</div>
 		</div>
 <!--Comedy slider-->
-        <div class="superslider" id="comedy">
-		</div>	
+        <div class="superslider" id="comedy"></div>	
 <!--end of Comedy slider-->
 <!--Romance Catagory Title-->			
 		<div class="row">
@@ -77,25 +76,21 @@
 			</div>
 		</div>
 <!--Action slider-->
-        <div class="superslider" id="action">
-           
-		</div>	
+        <div class="superslider" id="action"></div>	
 <!--end of Action slider--> 
 
 <!--Modal-->
 
 
 <div id="movieModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
-<div class="modal-dialog modal-sm" role="document">
-<div id="modalContent" class="modal-content">
-	<h1>HALLÓ</h1>
+	<div class="modal-dialog modal-sm" role="document">
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<div id="modalContent" class="modal-content"></div>
+	</div>
 </div>
-</div>
-</div>
-
 			
 <!--footer-->
-		<div class="container hk-bannerfooter">
+		<div class="container hk-footer">
 			<div class="row"> 
 				<div class="col-xs-12 col-md-12">
 					<img class="footerlogo" src="img/moviebox-logo.png">
@@ -104,13 +99,11 @@
 			<div class="row"> 
 				<div class="col-xs-12 col-md-12">
 					<div class="centerlinks">
-						<ul>
-							<li><span><a href='#'>About</a></span></li>
-							<li><span><a href='#'>Term of Use</a></span></li>
-							<li><span><a href='#'>FAQ</a></span></li>
-							<li><span><a href='#'>Privacy</a></span></li>
-							<li><span><a href='#'>Contact Us</a></span></li>
-						</ul>
+						<a href='#'>About</a>
+						<a href='#'>Term of Use</a>
+						<a href='#'>FAQ</a>
+						<a href='#'>Privacy</a>
+						<a href='#'>Contact Us</a>
 					</div>
 				</div>
 			</div>
@@ -121,7 +114,9 @@
 					</div>
 				</div>
 			</div>
-		</div>	    
-  	</body>
+		</div>
+			
+			
+  </body>
 </html>
 
