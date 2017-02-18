@@ -13,9 +13,7 @@ function openMovieModal(id, listType){ // það sem er inn í sviganum er object
 	
 	$('#modalContent').append('<div class="hk-undertitle"><span>' + movie.genre_ids + '</span></div>'); 
 	
-	
-			
-			
+		
 
 	$('#modalContent').append ('<div class="hk-ratingCircle"><span>' + movie.vote_average + '</span></div>'); // append límir upplýsingar við upplýsingar
 
@@ -56,7 +54,7 @@ class Movie {
 		findGenre(ids){
 			let genre = []; 
 				for(var i = 0; i < ids.length; i++){
-					genre.push(arrayOfGenres.filter(function(item){
+					genre.push(arrayOfGenres.filter(function(item){ //beyta þessu í arrow function
 						return item.id == ids[i]; //returnar objectinu sem hefur sama id og við erum að leita að
 					})[0].name); //erum bara að leita að einu í einu
 				}

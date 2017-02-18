@@ -17,10 +17,7 @@ function renderType(listType, APIPath) {
 	
 		const mpmovie = new Movie(listType, movieList);
 		mpmovie.render();
-
-		
-		
-		
+	
 		
 	};
 	r.send();
