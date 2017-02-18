@@ -334,8 +334,6 @@ body {
 	position: relative; /*má ekki breyta þessu*/
 }
 	
-
-	
 .hk-acters span {
 	display: none;
 }
@@ -404,11 +402,11 @@ body {
 }
 	
 
+
+/*slider*/
 .superslider {
 	padding-left: 0px;
 }
-
-
 
 
 
