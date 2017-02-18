@@ -9,39 +9,36 @@ function openMovieModal(id, listType){ // það sem er inn í sviganum er object
 	//console.log(movie.id);
 	
 	//$('#modalContent').empty(); // verður fyrst að tæma modal-ið því annars bætast nýjar upplýsingar við þær gömlu - þarf ekki þessa skipun með því að bæta við html í línu fyrir neðan
-	$('#modalContent').html('<div class="hk-cardTitleDesktop"><span><h1>' + movie.title + '</span></h1></div>'); 
-	
-	$('#modalContent').append('<div class="hk-undertitle"><span>' + movie.genre_ids + '</span></div>'); 
-	
-		
-
-	$('#modalContent').append ('<div class="hk-ratingCircle"><span>' + movie.vote_average + '</span></div>'); // append límir upplýsingar við upplýsingar
-
-
-
+	$('#modalContent').html('<div class="hk-cardTitleDesktop"><span><h1>' + movie.title + '</span></h1></div>'); 	
+	$('#modalContent').append('<div class="hk-undertitle">' + movie.genre_ids + '</div>'); 
+	$('#modalContent').append ('<div class="hk-ratingCircle">' + movie.vote_average + '</div>'); // append límir upplýsingar við upplýsingar
 	
 	//for loop  til þess að fá ekki alltaf sömu myndina upp og setja línuna fyrir neðan inn í hana:
 
 	for (i = 0; i < movie.length; i++) { 
-
-
     text += movie[i];
-}
 
+		}
 
-
-
-	$('#modalContent').append ('<img class="hk-card img" + src="https://image.tmdb.org/t/p/w780/34dxtTxMHGKw1njHpTjDqR8UBHd.jpg">' + '</img>');
- 
-	//$('#modalContent').append ('<img src"/lubzBMQLLmG88CLQ4F3TxZr2Q7N.jpg"' + imgPath + '">'.load(function() {
+	$('#modalContent').append ('<img class="hk-card img" + src="https://image.tmdb.org/t/p/w780' + movie.poster_path + '">' + '</img>'); // nær í réttar myndir
+ 	//$('#modalContent').append ('<img src"/lubzBMQLLmG88CLQ4F3TxZr2Q7N.jpg"' + imgPath + '">'.load(function() {
 		//$(this).width(345px).height(406px).appendTo('#modalContent');
 
 	//...});
 
-	
 	$('#movieModal').modal('toggle') //toogle = show() is run if an element is hidden. hide() is run if an element is visable
-	
+
+
+// þegar smellt er á modalContent  opnast about síðan - ath hvernig Albert gerir þetta
+	$( '#modalContent' ).click(function() {
+		window.location.href='about-movie.html'; 
+	});
+
+  	
 }
+
+
+
 
 
 

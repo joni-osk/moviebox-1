@@ -176,6 +176,20 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 600px) {
 
 
@@ -247,19 +261,9 @@
 
 }
 
-.allShapes .shape{ 
-	border-radius: 30px;
-	width: 125px;
-	height: 35px;
-	margin-top: 10px;
-}
 
-.shape h4 { 
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	color: #fff;
-	text-align: center;
-}
+
+
 
 .ui-slider-pip {
 	display: none;
