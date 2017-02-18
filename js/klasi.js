@@ -1,4 +1,3 @@
-
 //function sem virkjast þegar smellt er á mynd í slider
 function openMovieModal(id, listType){ // það sem er inn í sviganum er objects
 	//console.log(listType,mLists);
@@ -91,7 +90,7 @@ class Movie {
 					slidesToShow: 4,
 					slidesToScroll: 4,
 					focusOnSelect: false,
-					arrows: false,
+					arrows: true,
 					
 					responsive: [
 						{
@@ -100,7 +99,8 @@ class Movie {
 								slidesToShow: 3,
 								slidesToScroll: 3,
 								infinite: true,
-								dots: true
+								dots: true,
+								arrows: true,
 							}
 						},
 						{

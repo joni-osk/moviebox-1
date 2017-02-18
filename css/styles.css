@@ -18,6 +18,8 @@ Dökk brúnn: #220D0B
 
 body {
 	background-color: #fafafa; 
+	line-height: 1;
+	overflow-x: hidden;
 }
 
 .container {
@@ -150,14 +152,6 @@ body {
 	padding: 0px 15px;
 }
 
-.slick-next {
-	right: 5px;
-}
-
-.slick-prev {
-	left: 5px;
-}
-
 
 /*movie modal */
 
@@ -188,6 +182,7 @@ body {
 
 
 
+
 #modalContent .hk-ratingCircle {
 	color: #fff;
 	padding-top: 5px;
@@ -207,11 +202,10 @@ body {
 
 @media all and (max-width: 600px) {
 
-	/*head*/
+	/*---head---*/
 	.banner {
-		background: linear-gradient(#FAA20E, #E7833B);
 		height: 200px;
-		width: 100%;
+		
 	}
 
 	.banner-h1 {
@@ -236,7 +230,7 @@ body {
 
 
 
-	/*Cards*/
+	/*--Cards--*/
 	.hk-card {
 		background-color: #999;
 		max-width: 300px;
@@ -294,11 +288,7 @@ body {
 		text-align: center;
 	}
 
-
-	.superslider {
-		padding-left: 5px;
-	}
-
+	
 
 }
 
@@ -310,9 +300,7 @@ body {
 	.hk-card {
 		height: 600px;
 		max-width: 100%;
-		  
 	}
-	
 
 	.hk-cardTitle h2 {
 		line-height: 1.4em;
@@ -320,16 +308,21 @@ body {
 		left: 20px;
 		max-width: 80%; 
 	}
-	
 
-	
-
-	/*slider*/
-	.superslider {
-		padding-left: 0px;
+	.hk-ratingCircle {
+		width: 40px;
+		height: 40px;
+		border-radius: 50px;
+		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
+		text-align: center;
 	}
-
-
+	
+	.hk-ratingCircle h5 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		
+		text-align: center;
+	}
 
 
 
