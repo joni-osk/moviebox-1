@@ -238,8 +238,6 @@ body {
 
 	.hk-card:after {
 		height: 100%;
-		/*width: 100px;*/
-		/*background-color: rgba(255,255,255,.7);*/
 		content: "";
 		position: absolute;
 		top: 0;
@@ -310,137 +308,18 @@ body {
 
 	.hk-cardTitle h2 {
 		line-height: 1.4em;
-		z-index: 5;
 		bottom: 150px;
 		left: 20px;
-		font-family: 'Oswald', sans-serif;
-		color: #4F4F4F;
-		font-size: 28px;
-		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-		position: relative; /*má ekki breyta þessu*/ 
-		text-align: left;
 		max-width: 80%; 
 	}
 	
 
-.hk-card:after {
-	height: 100%;
-	/*width: 100px;*/
-	/*background-color: rgba(255,255,255,.7);*/
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	border-bottom: 214px solid rgba(255,255,255,.8);
-	border-left: 90px solid transparent;
-	border-right: 100% solid transparent;
-	width: 88%; 
-}
-
-.hk-cardTitle span {
-	float: right;
-	padding: 70px 10px 35px 0px;
-	z-index: 5;
-	top:0;
-	left:0;
-	font-family: 'Oswald', sans-serif;
-	color: #4F4F4F;
-	font-size: 30px;
-	text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.05);
-	position: relative; /*má ekki breyta þessu*/ 
-}
-.hk-undertitle span {
-	float: right;
-	top: 145px;
-	margin-top: 0px;
-	margin-right: -80px;
-	z-index: 5;
-	padding-top: 28px;
-    padding-bottom: 18px;
-    font-family: 'Oswald', sans-serif;
-	font-size: 30px;
-	font-family: 'Roboto Condensed', sans-serif;
-	font-size: 14px;
-	color: #737373;
-	left: 1px;
-	position: relative; /*má ekki breyta þessu*/
-}
-	
-.hk-acters span {
-	display: none;
-}
-	
-.hk-ratingCircle {
-	position: absolute;
-	right: 21px;
-	bottom: 12px;
-	z-index: 3;
-	width: 32px;
-	height: 32px;
-	background: #E7833B;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.19);
-}
-.hk-ratingCircle span {
-	font-family: 'Roboto', sans-serif;
-	font-size: 13px;
-	color: #fff;
-	position: absolute;
-	right: 6px;
-	bottom: 6px;
-}
-
-/*footer*/
- .hk-bannerfooter {
-	background: linear-gradient(#FAA20E, #E7833B);
-	height: 305px;
-	width: 100%;
-	margin-top: 60px;
-}
-	
-.footerlogo {
-	display: inline-block;
-	position: relative;
-	top: 110px;
-	max-width: 90px;
-	height: auto;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%)
-}
-	
-.centerlinks ul li a {
-	color: #fff;
-	font-size: 14px;
-	font-family: 'Oswald', sans-serif;
-	font-weight: lighter;
-	float: left;
-	padding: 10px;
-	top: 80px;
-	position: relative;
-	padding-top: 30px;
-}
-	
-.copyright span {
-	font-family: 'Oswald', sans-serif;
-	font-size: 12px;
-	color: #fff;
-	font-weight: lighter;
-	left: 25%;
-  	top: 120px;
-	position: relative;
-}
 	
 
-
-/*slider*/
-.superslider {
-	padding-left: 0px;
-}
-
-
+	/*slider*/
+	.superslider {
+		padding-left: 0px;
+	}
 
 
 
