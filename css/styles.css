@@ -181,11 +181,11 @@ body {
 }
 
 
-
-
 #modalContent .hk-ratingCircle {
 	color: #fff;
-	padding-top: 5px;
+	padding-top: 13px;
+	margin-bottom: -250px;
+	margin-right: 10px;
 }
 
 
@@ -193,7 +193,9 @@ body {
 	padding-right: 0px;
 }
 
-
+#modalContent .hk-undertitle {
+	display: none;
+}
 
 
 
