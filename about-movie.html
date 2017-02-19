@@ -4,16 +4,19 @@
     <title>MovieBox</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
 		<!--CSS-->
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 		<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css">
 		<link rel="stylesheet" type="text/css" href="css/styles.css">
 		<link rel="stylesheet" type="text/css" href="css/about.css">
-		<link rel="stylesheet" type="text/css" href="css/footer.css">
+		
 		<!--FONT-->
 		<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700|Roboto+Condensed:300,400,700|Roboto:300,400,500,700,900" rel="stylesheet">
+		
 		<!--JS-->
 		<script src="js/jquery-3.1.1.min.js"></script>
 		<script type="text/javascript" src="js/slick.min.js"></script>
@@ -22,6 +25,7 @@
 		<script src="js/bootstrap.min.js"></script>
 		
 		<script src="js/ajax.js"></script>
+		<script src="js/klasi.js"></script>
 		
   </head>
   <body>
@@ -30,11 +34,11 @@
 			<div class="container ir-about-banner">
 				<div class="row">
 					<div class="col-l-6 col-xs-6">
-						<img class="logo" src="img/moviebox-logo-shadow.svg">
+						<a href="index.html"><img class="logo" src="img/moviebox-logo-shadow.svg"></a>
 					</div>	
 
 					<div class="col-l-6 col-xs-6">
-						<img class="logo-leit" src="img/LEIT.svg">
+						<a href="search.html"><img class="logo-leit" src="img/LEIT.svg"></a>
 					</div>
 				</div>
 			</div>
@@ -45,7 +49,7 @@
 		<div class="container">
 			<div class="row">
 				
-				<div class="ir-poster col-xs-7 col-sm-8 col-md-8 col-lg-5">
+				<div id ="moviePoster" class="ir-poster col-xs-7 col-sm-8 col-md-8 col-lg-5">
 					<img src="img/rougeone-poster1.jpg" class="img-rounded img-responsive"/>
 
 						<div class="year-duration-desktop col-xs-5">
@@ -77,7 +81,7 @@
 						</div>
 						<div class="row">
 							<div class="col-xs-12">
-								<h1 class="ir-title">Rogue One</h1>
+								<h1 id="movieTitle" class="ir-title">Rogue One</h1>
 								<h4 class="ir-subtitle">A Star Wars Story</h4>
 								<h2 class="ir-year-desktop">2016</h2>
 							</div>
@@ -145,33 +149,33 @@
 			
 		
 	<!--FOOTER-->
-	<div class="container hk-bannerfooter">
-		<div class="row"> 
-			<div class="col-xs-12 col-md-12">
-				<img class="footerlogo" src="img/moviebox-logo.png">
+	<section id="footer">
+		<div class="container hk-footer">
+			<div class="row"> 
+				<div class="col-xs-12 col-md-12">
+					<img class="footerlogo" src="img/moviebox-logo.png">
+				</div>
 			</div>
-		</div>
-		<div class="row"> 
-			<div class="col-xs-12 col-md-12">
-				<div class="centerlinks">
-					<ul>
-						<li><span><a href='#'>About</a></span></li>
-						<li><span><a href='#'>Term of Use</a></span></li>
-						<li><span><a href='#'>FAQ</a></span></li>
-						<li><span><a href='#'>Privacy</a></span></li>
-						<li><span><a href='#'>Contact Us</a></span></li>
-					</ul>
+			<div class="row"> 
+				<div class="col-xs-12 col-md-12">
+					<div class="centerlinks">
+						<a href='#'>About</a>
+						<a href='#'>Term of Use</a>
+						<a href='#'>FAQ</a>
+						<a href='#'>Privacy</a>
+						<a href='#'>Contact Us</a>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-xs-12 col-md-12">
+					<div class="copyright">
+						<h5>Copyright  2016-2017 - MovieBox.io, inc. </h5>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row"> 
-			<div class="col-xs-12 col-md-12">
-				<div class="copyright">
-					<span>Copyright  2016-2017 - MovieBox.io, inc. </span>
-				</div>
-			</div>
-		</div>
-	</div>	
+	</section>	
 	
 		
 	

@@ -8,9 +8,9 @@ function openMovieModal(id, listType){ // það sem er inn í sviganum er object
 	//console.log(movie.id);
 	
 	//$('#modalContent').empty(); // verður fyrst að tæma modal-ið því annars bætast nýjar upplýsingar við þær gömlu - þarf ekki þessa skipun með því að bæta við html í línu fyrir neðan
-	$('#modalContent').html('<div class="hk-cardTitleDesktop"><span><h1>' + movie.title + '</span></h1></div>'); 	
+	$('#modalContent').html('<div class="hk-cardTitle"><h1>' + movie.title + '</h1></div>'); 	
 	$('#modalContent').append('<div class="hk-undertitle">' + movie.genre_ids + '</div>'); 
-	$('#modalContent').append ('<div class="hk-ratingCircle">' + movie.vote_average + '</div>'); // append límir upplýsingar við upplýsingar
+	$('#modalContent').append('<div class="hk-ratingCircle">' + '<h5>' + movie.vote_average + '</h5></div>'); // append límir upplýsingar við upplýsingar
 	
 	//for loop  til þess að fá ekki alltaf sömu myndina upp og setja línuna fyrir neðan inn í hana:
 
@@ -30,10 +30,10 @@ function openMovieModal(id, listType){ // það sem er inn í sviganum er object
 
 // þegar smellt er á modalContent  opnast about síðan - ath hvernig Albert gerir þetta
 	$( '#modalContent' ).click(function() {
-		window.location.href='about-movie.html'; 
+		window.location.href='about-movie.html'; 	
 	});
 
-  	
+  
 }
 
 
@@ -134,7 +134,7 @@ class Movie {
 	
 } 
 
-
+//klassi fyrir genre array 
 class Genre {
 	constructor (result) {
 		this.id = result.id;

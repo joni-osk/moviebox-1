@@ -1,6 +1,10 @@
+#footer {
+	padding-top: 5em;
+}
+
 .hk-footer {
 	background: linear-gradient(#FAA20E, #E7833B);
-	height: 250px;
+	height: 280px;
 	width: 100%;
 	text-align: center;
 	padding-top: 10px;
@@ -23,11 +27,20 @@
 }
 
 .copyright {
-	padding: 10px 0;
+	padding: 20px 0;
+}
+
+.copyright h5 {
+	color: #fff;
 }
 
 @media all and (max-width: 600px) {
 
+	#footer {
+		display: none;
+	}
+	
+	
 	.hk-footer {
 		
 	}

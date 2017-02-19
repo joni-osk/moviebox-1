@@ -32,20 +32,15 @@
 	font-size: 16px;
 }
 
-.search-slider-rating h3 {
+.search-slider-rating h3,
+.search-slider-year h3,
+.genre h3
+{
 	font-family: 'Oswald', sans-serif;
 	font-size: 40px;
 	color: #4F4F4F;
 	padding-bottom: 70px;
 	padding-top: 50px;
-}
-
-.search-slider-year h3 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	color: #4F4F4F;
-	padding-top: 100px;
-	padding-bottom: 70px;
 }
 
 .search-logo img {
@@ -56,13 +51,6 @@
 	height: auto;
 }
 
-.genre h3 {
-	font-family: 'Oswald', sans-serif;
-	font-size: 40px;
-	color: #4F4F4F;
-	padding-top: 100px;
-	padding-bottom: 25px;
-}
 
 
 .rating-slider, .year-slider, .ui-slider-tip {
@@ -75,21 +63,31 @@
 }
 
 .shape {
-	background: #E84B33;
+	display: inline-block;
+	background-color: #fafafa;
 	border-radius: 30px;
-	width: 238px;
-	height: 75px;
-	float: right;
-	margin-right: 30px;
-	margin-top: 50px;
-	padding-top: 15px;
+	border: 3px solid #E84B33;
+	color: #E84B33;
+	width: 200px;
+	height: 60px;
+	margin: 20px 15px;
+	padding-top: 6px;
+}
+
+.shape:hover {
+	background-color: #E84B33;
+	color: #fafafa;
 }
 
 .shape h4 { 
 	font-family: 'Roboto', sans-serif;
-	font-size: 24px;
-	color: #fff;
+	font-size: 20px;
+	color: #E84B33;
 	text-align: center;
+}
+
+.shape:hover h4 {
+	color: #fafafa;
 }
 
 
@@ -115,10 +113,12 @@
      margin-top: -200px;
 
 }
+
 .form-style-8 textarea{
     resize:none;
     overflow: hidden;
 }
+
 .form-style-8 input[type="button"], 
 .form-style-8 input[type="submit"]{
     -moz-box-shadow: inset 0px 1px 0px 0px #45D6D6;
@@ -164,122 +164,93 @@
 	visibility: visible;
 }
 
-/*.genre {
-	width: 192px;
-	height: 61px;
-	background: #E84B33; 
-	border-radius: 20px;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 @media all and (max-width: 600px) {
 
 
-#coloredSlider {
-	float: left;
-	clear: left;
-	width: 80%;
-	margin: 15px;
-}
+	#coloredSlider {
+		float: left;
+		clear: left;
+		width: 80%;
+		margin: 15px;
+	}
 
-#coloredSlider .ui-state-default, .ui-widget-content .ui-state-default {
-	width: 35px;
-	height: 35px;
-	background: #FAA20E;
-	border-style: solid;
-    border-width: 6px;
-    border-color: #FAE0B3;
-	margin-top: -10px;
-	-moz-border-radius: 50px;
-	-webkit-border-radius: 50px;
-	border-radius: 50px;
-}
+	#coloredSlider .ui-state-default, .ui-widget-content .ui-state-default {
+		width: 35px;
+		height: 35px;
+		background: #FAA20E;
+		border-style: solid;
+			border-width: 6px;
+			border-color: #FAE0B3;
+		margin-top: -10px;
+		-moz-border-radius: 50px;
+		-webkit-border-radius: 50px;
+		border-radius: 50px;
+	}
 
-.rating-slider.ui-slider{
-	height: 5px;
-}
+	.rating-slider.ui-slider{
+		height: 5px;
+	}
 
-.year-slider.ui-slider{
-	height: 5px;
-}
+	.year-slider.ui-slider{
+		height: 5px;
+	}
 
-/* style tooltips on handles and on labels */
-/* also has a nice transition */
-.ui-slider-float .ui-slider-tip,
-.ui-slider-float .ui-slider-tip-label {
-  font-size: 16px;
-  margin-top: -5px;
-  
-}
+	/* style tooltips on handles and on labels */
+	/* also has a nice transition */
+	.ui-slider-float .ui-slider-tip,
+	.ui-slider-float .ui-slider-tip-label {
+		font-size: 16px;
+		margin-top: -5px;
 
-.ui-slider-vertical.ui-slider-pips .ui-slider-label {
-  top: 50%;
-  left: 0.5em;
-  margin-left: 0;
-  margin-top: -0.5em;
-  width: 1em;
+	}
 
-}
+	.ui-slider-vertical.ui-slider-pips .ui-slider-label {
+		top: 50%;
+		left: 0.5em;
+		margin-left: 0;
+		margin-top: -0.5em;
+		width: 1em;
 
-.search-slider-rating h3 {
-	font-size: 18px;
-	padding-bottom: 30px;
-	padding-top: 50px;
-	padding-left: 28px;
-}
+	}
 
-.search-slider-year h3 {
-	font-size: 18px;
-	padding-top: 100px;
-	padding-bottom: 30px;
-	padding-left: 28px;
-}
+	.search-slider-rating h3,
+	.search-slider-year h3,
+	.genre h3
+	{
+		font-size: 30px;
+		padding-bottom: 30px;
+		padding-top: 20px;
+		padding-left: 20px;
+	}
+	
+	.shape {
+		width: 100px;
+		height: 40px;
+		margin: 5px 0px;
+		padding-top: 0px;
+	}
+	
+	.shape h4 {
+		font-size: 15px;
+	}
 
-.genre h3 {
-	font-size: 18px;
-	padding-top: 100px;
-	padding-bottom: 30px;
-	padding-left: 28px;
+	.ui-slider-pip {
+		display: none;
+	}
 
-}
+	.search-logo img {
+		float: right;
+		padding-top: 35px;
+		width: 20px;
+		height: auto;
+		margin-right: 25px;
+	}
 
-
-
-
-
-.ui-slider-pip {
-	display: none;
-}
-
-.search-logo img {
-	float: right;
-	padding-top: 35px;
-	width: 20px;
-	height: auto;
-	margin-right: 25px;
-}
-
-.search-type {
-	margin-top: -10px;
-}
+	.search-type {
+		margin-top: -10px;
+	}
 
 
 
