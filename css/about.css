@@ -36,6 +36,7 @@ Dökk brúnn: #220D0B
 	z-index: -1;
 	
 }
+/* ánægð með þetta, var í vændræðum með þessa skálínu */
 /*---SKÁ LÍNA---*/
 .ir-about-banner:after {
 	content: '';
